@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+void rec1(int n){
+
+if(n==0) return;
+cout<<n<<endl;
+rec1(n-1);
+}
+
+void rec2(int n){
+if(n==0) return;
+rec2(n-1);
+cout<<n<<endl;
+
+}
+
+void rec3(int n) {
+cout<<n<<endl;
+if (n==0) return;
+rec3(n-1);
+}
+
+
+
+int main()
+{
+    cout<<"Recursividad: "<<endl;
+    rec1(5);
+    cout<<endl;
+    rec2(5);
+    cout<<endl;
+    rec3(5);
+        return 0;
+}
